@@ -356,24 +356,3 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* Hobbies section styling */
-.Hobbies{
-    color:#fff;
-    background: none;
-}
-.Projects{
-    color:#fff;
-    background: #111;
-}
-.contact{
-    color:#fff;
-    background: #111;
-}
-.Hobbies .title::before,
-.Projects .title::before{
-    background: #fff;
-}
-.Hobbies .title::after,
-.Projects .title::after{
-    background: #111;
-    content: "what i love to do";
