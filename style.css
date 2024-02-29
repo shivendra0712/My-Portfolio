@@ -596,3 +596,19 @@ section .title::after{
   color: #F14668;
   background: none;
 }
+
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: #F14668;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
