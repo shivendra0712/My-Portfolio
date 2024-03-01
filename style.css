@@ -1,3 +1,4 @@
+/* add hole body style margin,padding box-sizing and text-decoration. */
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +7,12 @@
 
 }
 
+/* scroll behavior speed*/
 html{
     scroll-behavior: smooth;
 }
+
+/* add background color */
 body {
   background-image: url("images/background.jpg");
 }
@@ -25,6 +29,7 @@ section{
     margin: auto;
 }
 
+/* about,education,skills,experience ,achieve and contact section display set flex and other */
 .about .about-content,
 .Education .serv-content,
 .skills .skills-content,
@@ -37,7 +42,7 @@ section{
     justify-content: space-between;
 }
 
-
+/* section which class is title that class add style postion and other */
 section .title{
     position: relative;
     text-align: center;
@@ -47,6 +52,8 @@ section .title{
     padding-bottom: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
+
+/* section class title on apply a CSS pseudo-element  before*/
 section .title::before{
     content: "";
     position: absolute;
@@ -57,6 +64,8 @@ section .title::before{
     background: white;
     transform: translateX(-50%);
 }
+
+/* section class title on apply a CSS pseudo-element after*/
 section .title::after{
     position: absolute;
     bottom: -10px;
@@ -70,6 +79,7 @@ section .title::after{
 
 
 /* navbar styling */
+/* add position of navber class name and other  */
 .navbar{
     position: fixed;
     width: 100%;
@@ -78,31 +88,46 @@ section .title::after{
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
 }
+
+/* add navber class name is sticky  */
 .navbar.sticky{
     padding: 15px 0;
     background: black;
 }
+
+/* add navber class name  of display */
 .navbar .max-width{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+/* add navber class name  anchar tag .*/
 .navbar .logo a{
     color: #fff;
     font-size: 35px;
     font-weight: 600;
 }
+
+/* add navber class name  of anchar tag  on span tag .*/
 .navbar .logo a span{
     color: #F14668;
     transition: all 0.3s ease;
 }
+
+/* add navber class name   anchar tag  on span tag  and add color.*/
+
 .navbar.sticky .logo a span{
     color: #fff;
 }
+
+/* add navber class name menu class list items.*/
 .navbar .menu li{
     list-style: none;
     display: inline-block;
 }
+
+/* add navber class name menu class list items. and anchar tag*/
 .navbar .menu li a{
     display: block;
     color: #fff;
@@ -111,9 +136,13 @@ section .title::after{
     margin-left: 25px;
     transition: color 0.3s ease;
 }
+
+/* add navber class name menu class list items. and anchar tag on hover whan click*/
 .navbar .menu li a:hover{
     color: #F14668;
 }
+
+/* add navber class name with sticky class  menu class list items. and anchar tag on hover whan click*/
 .navbar.sticky .menu li a:hover{
     color: #fff;
 }
@@ -126,6 +155,8 @@ section .title::after{
     cursor: pointer;
     display: none;
 }
+
+/* menu btn styling add cladd scroll-up-btn */
 .scroll-up-btn{
     position: fixed;
     height: 45px;
@@ -145,11 +176,15 @@ section .title::after{
     pointer-events: none;
     transition: all 0.3s ease;
 }
+
+/* menu btn styling add cladd scroll-up-btn  with show class */
 .scroll-up-btn.show{
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
 }
+
+/*  add hover on menu btn styling add cladd scroll-up-btn */
 .scroll-up-btn:hover{
     filter: brightness(90%);
 }
@@ -166,29 +201,43 @@ section .title::after{
     background-attachment: fixed;
     font-family: 'Ubuntu', sans-serif;
 }
+
+/* home section styling  with  max-width class  */
 .home .max-width{
   width: 100%;
   display: flex;
 }
+
+/* home section styling */
 .home .max-width .row{
   margin-right: 0;
 }
+
+/* home section styling  font size of text-1 */
 .home .home-content .text-1{
     font-size: 27px;
 }
+
+/* home section styling  font size of text-2 */
 .home .home-content .text-2{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
+
+/* home section styling  font size of text-3 */
 .home .home-content .text-3{
     font-size: 40px;
     margin: 5px 0;
 }
+
+/* home section styling span tag*/
 .home .home-content .text-3 span{
     color: #F14668;
     font-weight: 500;
 }
+
+/* home section styling span tag*/
 .home .home-content a{
     display: inline-block;
     background: #F14668;
@@ -201,6 +250,9 @@ section .title::after{
     border: 2px solid #F14668;
     transition: all 0.3s ease;
 }
+
+
+/* home section home content class anchar on hover*/
 .home .home-content a:hover{
     color: #F14668;
     background: none;
@@ -212,33 +264,49 @@ section .title::after{
     font-size : 130%;
     text-align : center;
 }
+
+/* about section styling apply a CSS pseudo-element */
 .about .title::after{
     content: "who i am";
     background : black;
 }
+
+/* about section styling  about-content class and left class  */
 .about .about-content .left{
     width: 45%;
 }
+
+/* about section styling  about-content class and left class image tag  */
 .about .about-content .left img{
     height: 400px;
     width: 400px;
     object-fit: cover;
     border-radius: 60%;
 }
+
+/* about section styling  about-content class and right class  */
 .about .about-content .right{
     width: 55%;
 }
+
+/* about section styling  about-content class and right class text class   */
 .about .about-content .right .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
 }
+
+/* about section styling  about-content class and right class text class span tag   */
 .about .about-content .right .text span{
     color: #F14668;
 }
+
+/* about section styling  about-content class and right class p tag  */
 .about .about-content .right p{
     text-align: justify;
 }
+
+/* about section styling  about-content class and right class anchar tag  */
 .about .about-content .right a{
     display: inline-block;
     background: #F14668;
@@ -251,6 +319,8 @@ section .title::after{
     border: 2px solid #F14668;
     transition: all 0.3s ease;
 }
+
+/* about section styling  about-content class and right class a tag  on hover   */
 .about .about-content .right a:hover{
     color: #F14668;
     background: none;
@@ -262,15 +332,22 @@ section .title::after{
     color:#fff;
     background: #111;
 }
+
+
+/* Education section styling apply a CSS pseudo-element */
 .Education .title::before,
 .Projects .title::before{
     background: #fff;
 }
+
+/* Education section styling apply a CSS pseudo-element */
 .Education .title::after,
 .Projects .title::after{
     background: #111;
     content: "where i've studied";
 }
+
+/* Education section styling serv-content class add card class */
 .Education .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -280,23 +357,35 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
+/* Education section  serv-content class add card class hover */
 .Education .serv-content .card:hover{
     background: #F14668;
 }
+
+/* Education section  serv-content class inside card class  inside box class */
 .Education .serv-content .card .box{
     transition: all 0.3s ease;
 }
+
+/* Education section  serv-content class inside card class  on hover inside box  */
 .Education .serv-content .card:hover .box{
     transform: scale(1.05);
 }
+
+/* Education section  serv-content class inside card class  i*/
 .Education .serv-content .card i{
     font-size: 50px;
     color: #F14668;
     transition: color 0.3s ease;
 }
+
+/* Education section  serv-content class inside card class on hover   */
 .Education .serv-content .card:hover i{
     color: #fff;
 }
+
+/* Education section  serv-content class inside card class  inside text style  */
 .Education .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
@@ -305,23 +394,34 @@ section .title::after{
 
 
 /* Experiences section styling */
+
+/*  now project store in exprence section  */
 .Experiences{
     color:#fff;
     background: none;
 }
+
+/* projects section styling */
 .Projects{
     color:#fff;
     background: #111;
 }
+
+/* Experiences section styling inside apply pseudo element */
 .Experiences .title::before,
 .Projects .title::before{
     background: #fff;
 }
+
+/* Experiences section styling inside apply pseudo element */
 .Experiences .title::after,
 .Projects .title::after{
     background: #111;
     content: "what i've done";
 }
+
+
+/* Experiences section styling inside apply pseudo element */
 .Experiences .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
@@ -508,7 +608,6 @@ section .title::after{
     margin: 10px 0 7px 0;
 }
 
-/* Projects section styling */
 
 
 /* contact section styling */
